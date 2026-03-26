@@ -5,15 +5,16 @@
 }
 
 body {
-    
+    font-family: "MuseoModerno", "Funnel Display";
 }
+
+/* Sign Up / Log In Page */
 
 .back-main {
     justify-content: center;
     display: flex;
     align-items: center;
     min-height: 100vh;
-    font-family: "MuseoModerno", "Funnel Display";
     background-image: url(Images/vinyldarker.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
@@ -116,3 +117,75 @@ button:hover {
     transform: scale(-6);
 }
 
+/* Sign Up / Log In Page */
+
+/* Home Page */
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/hand\ holding\ a\ vinyl.jpg);
+  background-position: center;
+  background-size: cover
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #CED3D6;
+    height: 5vh;
+}
+
+.banner-img1 {
+    width: 30%;
+    cursor: pointer;
+    padding: 90px 0;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #62676B;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: #CED3D6;
+    padding-top: 90px;
+}
+
+.content h1{
+    font-size: 4.5em;
+    margin-top: 80px;
+    
+}
+
+span {
+    animation: titlespin 1s infinite alternate-reverse;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 900;
+    line-height: 25px;
+    text-decoration: underline;
+}
+
+@keyframes titlespin {
+    0% { color: #CED3D6; }
+  50% { color: #62676B; }
+  100% { color: #151618; }
+}
+/* Home Page */
