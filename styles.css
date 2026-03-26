@@ -5,6 +5,10 @@
 }
 
 body {
+    
+}
+
+.back-main {
     justify-content: center;
     display: flex;
     align-items: center;
@@ -91,7 +95,7 @@ button:hover {
     height: 460px;
     background: #151618;
     border-radius: 40% / 10%;
-    transform: translateY(-150px);
+    transform: translateY(-110px);
     transition: .8s ease-in-out;
 }
 
