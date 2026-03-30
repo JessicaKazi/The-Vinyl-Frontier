@@ -198,7 +198,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(Images/black&white\ vinyl.jpg);
+    background: url(Images/guy\ playing\ a\ vinyl.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -214,7 +214,7 @@ span {
 }
 
 .container form h1 {
-    color: #151618;
+    color: #CED3D6;
     font-weight: 500;
     margin-top: 20px;
     width: 500px;
@@ -234,7 +234,7 @@ span {
 }
 
 .container form input::placeholder {
-    color: #151618;
+    color: #fff;
 }
 
 .container form #lastName, .container form #mobile {
@@ -242,7 +242,7 @@ span {
 }
 
 .container form h4 {
-    color: #151618;
+    color: #CED3D6;
     font-weight: 600;
     width: 600px;
     margin-top: 20px;
@@ -253,18 +253,39 @@ span {
     background: none;
     border: none;
     border-bottom: 2px solid #fff;
-    color: #62676B;
+    color: #fff;
     font-weight: 200;
     font-size: 15px;
     padding: 10px;
     outline: none;
     min-width: 600px;
-    max-width: 600px;
-    min-width: 80px;
-    max-width: 80px;
+   
 }
 
 textarea::-webkit-scrollbar {
     width: 1em;
 }
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
+
+.container form #button1 {
+    border: none;
+    background: #62676B;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #CED3D6;
+}
+
+.container form #button1:hover {
+    opacity: 0.7;
+}
 /* Contact Us */
+
+/* Song Library */
+
+
+/* Song Library */
