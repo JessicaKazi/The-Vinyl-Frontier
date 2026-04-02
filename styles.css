@@ -1,0 +1,479 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "MuseoModerno", "Funnel Display";
+    background-color: #151618;
+}
+
+/* Sign Up / Log In Page */
+
+.back-main {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(Images/vinyldarker.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.main {
+    width: 350px;
+    height: 500px;
+    background: #62676B;
+    border-radius: 40px;
+    box-shadow: 5px 20px 50px #fff;
+}
+
+#check1 {
+    display: none;
+}
+
+.signup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    color: #151618;
+    font-size: 2.3rem;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+input {
+    width: 60%;
+    height: 20px;
+    background: #CED3D6;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 60%;
+    height: 30px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #151618;
+    background: #CED3D6;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+button:hover {
+    background:#62676B;
+    color:#CED3D6;
+}
+
+.log:hover  {
+    background: #62676B;
+    color: #CED3D6;
+}
+
+.login {
+    color: #CED3D6;
+    height: 460px;
+    background: #151618;
+    border-radius: 40% / 10%;
+    transform: translateY(-110px);
+    transition: .8s ease-in-out;
+}
+
+.login label {
+    color: #CED3D6;
+    transform: scale(0.6);
+}
+
+.redirect {
+    color: #151618;
+}
+
+#check1:checked ~ .login {
+    transform: translateY(-500px);
+}
+
+#checked:checked ~ .login label {
+    transform: scale(1);
+}
+
+#checked:checked ~ .signup label {
+    transform: scale(-6);
+}
+
+/* Sign Up / Log In Page */
+
+/* Home Page */
+.banner-three {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/dark\ vinyl.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}   
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: #151618;
+    background: #62676B;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 30px;
+}
+
+.header-content {
+    margin-bottom: 150px;
+    color: #CED3D6;
+    text-align: center;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: #62676B;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: #62676B;
+    border-radius: 30px;
+    color: #CED3D6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #CED3D6;
+} 
+
+.logo {
+    font-size: 4vmin;
+    color: #CED3D6;
+}
+
+.active:hover {
+    color: #CED3D6;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+span {
+    animation: titlespin 1s infinite alternate-reverse;
+}
+
+@keyframes titlespin {
+    0% { color: #CED3D6; }
+  50% { color: #62676B; }
+  100% { color: #151618; }
+}
+
+
+@media (max-width: 600px){
+    .navbar {
+        padding: 0;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #151618;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+}
+
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #CED3D6;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background: #62676B;
+}
+
+.row .col img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+/* Home Page */
+
+/* Contact Us */
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(Images/glowy\ vinyl.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container form {
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.9);
+    background: rgba(255, 255, 255, 0.1);
+    flex-wrap: wrap;
+}
+
+.container form h1 {
+    color: #CED3D6;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.container form input {
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+
+.container form input::placeholder {
+    color: #fff;
+}
+
+.container form #lastName, .container form #mobile {
+    margin-left: 20px;
+}
+
+.container form h4 {
+    color: #CED3D6;
+    font-weight: 600;
+    width: 600px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+   
+}
+
+textarea::-webkit-scrollbar {
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
+
+.container form #button1 {
+    border: none;
+    background: #62676B;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #CED3D6;
+}
+
+.container form #button1:hover {
+    opacity: 0.7;
+}
+/* Contact Us */
+
+/* Song Library */
+
+ .carousel-driver-title {
+    color: white;
+    text-align: center;
+    margin: 20px 0 0 20px;
+    padding: 20px 0;
+    font-size: 2.5em;
+}
+
+.carousel-driver-title:hover {
+    color:#202D36;
+    text-decoration: dashed;
+}
+
+.slider {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+figure {
+    position: relative;
+    left: 0;
+    width: 400%; 
+    animation: 10s slide infinite;
+}
+
+.slide {
+    position: relative;
+    width: 25%;
+    float: left;
+}
+
+.slide h1{
+    position: absolute;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.slide img{
+    width: 100%;
+    height: 500px;
+}
+
+@keyframes slide{
+    0%{
+        left:0;
+    }
+    10%{
+        left:0;
+    }
+    20%{
+        left:-100%;
+    }
+    30%{
+        left:-100%;
+    }
+    40%{
+        left:-200%;
+    }
+    50%{
+        left:-200%;
+    }
+    55%{
+        left:-300%;
+    }
+    65%{
+        left:-300%;
+    }
+    66%{
+        left:-200%;
+    }
+    74%{
+        left:-200%;
+    }
+    75%{
+        left:-100%;
+    }
+    85%{
+        left:-100%;
+    }
+    90%{
+        left:0;
+    }
+    1000%{
+        left:0;
+    }
+}
+/* animation gallery */
+
+.container-three {
+    margin-top: 4vmin;
+    padding: 0 7vmin;
+    display: flex;
+
+}
+
+.logo-one {
+    color: #fff;
+    text-align: center;
+    font-size: 7vmin;
+    margin-top: 10px;
+}
+
+.album-one {
+    padding: 3vmin 0;
+    
+}
+/* Song Library */
+
+/* About Us  */
+
+
+/* About Us */
