@@ -21,26 +21,24 @@
 <body>
 
      <header>
-        <div>
-            <div class="navbar">
-                <img src="Images/vinyl logo.png" class="banner-img1">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="library.html">Library</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="signup.html">Sign Up</a></li>
-                </ul>
-            </div>
-        </header>
+         <nav class="navbar">
+        <h1 class="logo">Cloud Of Tunes</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="library.html">Library</a></li>
+            <li class="ctn"><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+     </header>
 
     <div class="container">
         <form>
             <h1>Want More <span>&#9835;</span>?</h1>
-            <input type="text" id="firstName" placeholder="e.g, Jane">
-            <input type="text" id="lastName" placeholder="e.g, Doe">
-            <input type="email" id="mail" placeholder="e.g, janedoe@gmail.com">
-            <input type="tel" id="mobile" placeholder="e.g, (000)-123-4578">
+            <input type="text" id="firstName" placeholder="e.g, Jane" required>
+            <input type="text" id="lastName" placeholder="e.g, Doe" required>
+            <input type="email" id="mail" placeholder="e.g, janedoe@gmail.com" required>
+            <input type="tel" id="mobile" placeholder="e.g, (000)-123-4578" required>
             <h4>Send Your Playlist Links here!</h4>
             <textarea required></textarea>
             <input type="submit" value="Send" id="button1">
